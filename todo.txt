@@ -1,0 +1,3 @@
+Fix there being a random blank item as the first ocmbo box item (maybe switch the control I'm using if it doesn't take 1000 years to populate.
+Add the ability to hide and unhide the window.
+Add the actual coppying.
