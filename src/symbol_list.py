@@ -1,6 +1,6 @@
 ﻿# -*- coding: UTF-8 -*-
 
-Symbols = {
+SYMBOLS = {
 	"back quote": "„",
 	"left quote": "“",
 	"right quote": "”",
