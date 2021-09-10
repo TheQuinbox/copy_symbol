@@ -20,7 +20,7 @@ class Application:
 		self.running = False
 		self.logger = logging
 		self.wx = wx.App()
-		self.main_dialog = main.MainDialog(f"{self.name} V{self.version}")
+		self.main_dialog = main.MainDialog(self, f"{self.name} V{self.version}")
 
 	def run(self):
 		self.running = True
