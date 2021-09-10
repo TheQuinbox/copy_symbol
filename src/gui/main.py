@@ -28,5 +28,10 @@ class MainDialog(wx.Dialog):
 
 	def on_ok(self, event=None):
 		selected_symbol = symbol_list.SYMBOLS[self.symbols_list.GetString(self.symbols_list.GetSelection())]
-		pyperclip.copy(selected_symbol)
-		self.app.logger.info(f"Coppied symbol: {selected_symbol}")
+		try:
+			pyperclip.copy(selected_symbol)
+			self.app.logger.info(f"Coppied symbol: {selected_symbol}")
+			self.app.say("Coppied.")
+		except Exception as e:
+			self.app.say(f"Error copying symbol. {e}")
+			self.logger.info(f"Error copying symbol. {e}")

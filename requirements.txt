@@ -1,2 +1,3 @@
 wxpython
 pyperclip
+git+https://www.github.com/accessibleapps/accessible_output2
