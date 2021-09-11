@@ -1,3 +1,4 @@
 wxpython
 pyperclip
 git+https://www.github.com/accessibleapps/accessible_output2
+git+https://www.github.com/accessibleapps/keyboard_handler
