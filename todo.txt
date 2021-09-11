@@ -1,3 +1,2 @@
 Add the ability to save window shown/hidden state.
 Add the ability to remap your keys.
-Make the copy button default.

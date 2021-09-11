@@ -21,9 +21,10 @@ class MainDialog(wx.Dialog):
 		self.symbols_list.SetSelection(0)
 		self.symbols_list.SetFocus()
 		self.main_box.Add(self.symbols_list, 0, wx.ALL, 10)
-		self.ok_button = wx.Button(self.panel, -1, "&Copy")
-		self.ok_button.Bind(wx.EVT_BUTTON, self.on_ok)
-		self.main_box.Add(self.ok_button, 0, wx.ALL, 10)
+		self.copy_button = wx.Button(self.panel, -1, "&Copy")
+		self.copy_button.Bind(wx.EVT_BUTTON, self.on_copy)
+		self.copy_button.SetDefault()
+		self.main_box.Add(self.copy_button, 0, wx.ALL, 10)
 		self.close_button = wx.Button(self.panel, -1, "E&xit")
 		self.close_button.Bind(wx.EVT_BUTTON, self.on_close)
 		self.main_box.Add(self.close_button, 0, wx.ALL, 10)
@@ -33,7 +34,7 @@ class MainDialog(wx.Dialog):
 		self.Destroy()
 		sys.exit()
 
-	def on_ok(self, event=None):
+	def on_copy(self, event=None):
 		selected_symbol = symbol_list.SYMBOLS[self.symbols_list.GetString(self.symbols_list.GetSelection())]
 		try:
 			pyperclip.copy(selected_symbol)
