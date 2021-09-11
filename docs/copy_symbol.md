@@ -2,7 +2,7 @@
 
 ## Introduction.
 
-Copy_symbol is a simple utility to copy many uncommon symbols to the clipboard. Some highlights inlcude:
+Copy_symbol is a simple utility to copy many uncommon symbols to the clipboard. Some highlights include:
 
 * Just sits in the background until you need it.
 * Supports over 2000 symbols.
